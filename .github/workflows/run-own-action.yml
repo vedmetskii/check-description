@@ -1,0 +1,19 @@
+name: Run Action
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  action:
+    name: My action
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        id: checkout
+        uses: vedmetskii/check-description@latest
