@@ -1,6 +1,6 @@
-name: The name of your action here
-description: Provide a description here
-author: Your name or organization here
+name: check-description
+description: GitHub Action for check description of pull request
+author: Kirill Vedmetskii
 
 # Add your action's branding here. This will appear on the GitHub Marketplace.
 branding:
@@ -9,15 +9,10 @@ branding:
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: Your input description here
+  mode:
+    description: The mode of action. May be 'strict', 'draft' and 'comment'
     required: true
-    default: '1000'
-
-# Define your outputs here.
-outputs:
-  time:
-    description: Your output description here
+    default: 'comment'
 
 runs:
   using: node24
