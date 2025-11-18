@@ -16,4 +16,7 @@ jobs:
     steps:
       - name: Checkout
         id: checkout
-        uses: vedmetskii/check-description@latest
+        uses: actions/checkout@v5
+      - name: My Action
+        id: check-description
+        uses: .
