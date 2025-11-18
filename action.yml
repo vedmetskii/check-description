@@ -4,16 +4,16 @@ author: Kirill Vedmetskii
 
 # Add your action's branding here. This will appear on the GitHub Marketplace.
 branding:
-    icon: heart
-    color: red
+  icon: heart
+  color: red
 
 # Define your inputs here.
 inputs:
-    mode:
-        description: The mode of action. May be 'strict', 'draft' and 'comment'
-        required: true
-        default: 'comment'
+  mode:
+    description: The mode of action. May be 'strict', 'draft' and 'comment'
+    required: true
+    default: 'comment'
 
 runs:
-    using: node24
-    main: dist/index.js
+  using: node24
+  main: dist/index.js

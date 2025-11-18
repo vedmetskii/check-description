@@ -6,5 +6,5 @@ import * as core from '@actions/core'
  * @returns Resolves when the action is complete.
  */
 export async function run(): Promise<void> {
-    core.info('Hello world!')
+  core.info('Hello world!')
 }
